@@ -2,7 +2,7 @@
 No pretendo plagiar su trabajo, tan solo evitar las cargas interminables en mis roles */
 
 
-.simple br, .mafs br, { display: none; }
+.simple br, .mafs br { display: none; }
 .simple-txt br, .mafs-txt br { display: inherit; }
 
 /*SIMPLE*/
