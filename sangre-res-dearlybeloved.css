@@ -1,0 +1,241 @@
+/** ESTE CÓDIGO CORRESPONDE A DEARLY BELOVED, DE LA COMUNIDA DE TREE OF LIFE RPG.
+Borraré este código cuando Dearly Beloved pueda cambiar sus códigos en el foro.
+En ningún momento he querido plagiar su trabajo, tan solo he subido esto para poder arreglar mis roles **/
+
+.lvar_main{
+    width: 550px;
+    padding: 50px 50px 20px 50px;
+    outline: solid 2px #2B2723;
+    outline-offset: -10px;
+}
+.lvar_header{
+    padding: 20px 10px 30px 10px;
+    text-align: center;
+}
+.lvar_title{
+    font-size: 41pt;
+    line-height: 1;
+    padding: 30px;
+    font-weight: 500;
+}
+.lvar_separador{
+    margin: 0 auto;
+    width: 1px;
+    height: 50px;
+}
+.lvar_title::first-letter{
+    font-size: 60pt;
+}
+.lvar_datos{
+    position: relative;
+    padding: 15px;
+    font-size: 9pt;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.lvar_text{
+    padding: 20px;
+    text-align: justify;
+    font-weight: 200;
+    font-size: 10pt;
+}
+.lvar_capital{
+    width: 85px;
+    height: 85px;
+    float:left;
+    font-size: 61pt;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: -50px;
+
+}
+.lvar_tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    font-family: var(--lvarbody);
+    color: var(--pearl);
+    padding: 20px 0px 20px 0px;
+}
+.lvar_tag{
+    display: flex;
+    gap: 5px;
+    background-color: var(--gray);
+    border-radius: 2px;
+    flex-grow: 2;
+}
+.icon_tag{
+    background-color: var(--bronze);
+    color: var(--gold);
+    font-size: 12pt;
+    padding: 5px 10px;
+    font-weight: 800;
+    border-radius: 2px;
+}
+.text_tag{
+    font-size: 9pt;
+    font-weight: 200;
+    padding: 5px;
+}
+.lvar_personajes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.lvar_personaje{
+    position: relative;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+}
+.pj_img{
+    width: 270px;
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+}
+.lvar_personaje:hover .pj_img{
+    filter: blur(5px);
+    background-blend-mode: multiply;
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+}
+.pj_datos{
+    padding: 20px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .5s ease;
+}
+.lvar_personaje:hover .pj_datos{
+    opacity: 1;
+}
+.lvar_personaje .material-symbols-outlined {
+    font-size: 33pt; 
+    transform-origin: 50% 50%;
+    transition: .5s ease;
+}
+.lvar_personaje i{
+    padding: 10px 0px 10px 0px;
+    font-size: 30pt;
+    transform-origin: 50% 50%;
+    transition: .5s ease;
+}
+.lvar_personaje:hover .material-symbols-outlined, .lvar_personaje:hover .fas {
+    -webkit-transform:scale(1.25);
+    transition: .5s ease;
+}
+.pj_name{
+    padding: 10px;
+    font-size: 30pt;
+    font-family: var(--lvartitle);
+    color: var(--pearl);
+    line-height: 1;
+}
+.pj_name b{
+    color: var(--gold);
+}
+.pj_mote, .pj_info{
+    padding: 5px;
+    font-family: var(--lvarbody);
+    font-size: 8pt;
+    color: var(--pearl);
+    text-transform: uppercase;
+    font-weight: 200;
+    line-height: 1.2;
+}
+.pj_mote b{
+    color: var(--gold);
+}
+.lvar_cronologia{
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    font-family: var(--lvarbody);
+    color: var(--pearl);
+    padding: 30px 0px 20px 0px;
+}
+.lvar_cronologia a{
+    text-decoration: none;
+    color: var(--gold)
+}
+.lvar_chap{
+    display: flex;
+    gap: 5px;
+    background-color: var(--gray);
+    border-radius: 2px;
+    flex-basis: 100%;
+    flex-grow: 2;
+    transition: .5s ease;
+}
+.icon_chap{
+    width: 20px;
+    background-color: var(--bronze);
+    color: var(--gold);
+    font-size: 9pt;
+    padding: 5px;
+    font-weight: 800;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: .5s ease;
+}
+.lvar_chap:hover{
+    background-color: #2B2723;;
+    transition: .5s ease;
+}
+.lvar_chap:hover .text_chap{
+    color: var(--pearl);
+    transition: .5s ease;
+}
+.text_chap{
+    text-align: left;
+    font-size: 9pt;
+    font-weight: 200;
+    padding: 5px;
+    transition: .5s ease;
+}
+.lvar_chap:hover .icon_chap::before{
+  content:'Capítulo ';
+}
+.lvar_chap:hover .icon_chap{
+  width: 100px;
+  transition: .3s ease;
+} 
+.lvar_credits{
+    width: 640px;
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--dark);
+    font-family: "Montserrat";
+    padding: 8px 5px;
+    margin-top: -10px;
+}
+.text_credits{
+    color: var(--pearl);
+    font-size: 7pt;
+    text-transform: uppercase
+}
+.text_credits a{
+    text-decoration: none;
+    color: var(--gold);
+}
+.icon_credits{
+    background-color: var(--bronze);
+    color: var(--gold);
+    font-size: 10pt;
+    padding: 4px 5px;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
