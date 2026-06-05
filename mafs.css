@@ -2,7 +2,7 @@
 No pretendo plagiar su trabajo, tan solo evitar cargas interminables en el foro */
 
 .mafs br { display: none; }
-.mafs-txt br { display: inherit; }
+.mafs-txt br { display: inline; }
 
 /*Mafia*/
 .mafs {
