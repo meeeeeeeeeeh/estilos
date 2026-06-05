@@ -1,8 +1,8 @@
 /* Este código pertenece a Soren, de Tree Of Life
 No pretendo plagiar su trabajo, tan solo evitar cargas interminables en el foro */
 
-.simple br, .mafs br { display: none; }
-.simple-txt br, .mafs-txt br { display: inherit; }
+.mafs br { display: none; }
+.mafs-txt br { display: inherit; }
 
 /*Mafia*/
 .mafs {
