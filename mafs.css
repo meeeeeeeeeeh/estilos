@@ -1,0 +1,205 @@
+/* Este código pertenece a Soren, de Tree Of Life
+No pretendo plagiar su trabajo, tan solo evitar cargas interminables en el foro */
+
+.simple br, .mafs br { display: none; }
+.simple-txt br, .mafs-txt br { display: inherit; }
+
+/*Mafia*/
+.mafs {
+  --negrorgb: 0, 0, 0;
+  --eee: #eee;
+  --ddd: #ddd;
+  --444: #444;
+  --111: #0a0a0a;
+  --accentob: #44000B;
+  --accentoa: #a94b5b;
+  --letra: "Outfit", sans-serif;
+  --letrab: "Hepta Slab", sans-serif;
+  --grads: var(--accentoa), var(--accentob);
+  --grad: linear-gradient(90deg, var(--accentoa), var(--accentob));
+}
+
+.mafs {
+  width: 550px;
+  box-sizing: border-box;
+  margin: 10px auto;
+  background: var(--111);
+  color: var(--eee);
+  line-height: 1.2rem;
+  font-size: 13px;
+  font-family: arial, sans-serif;
+  text-align: justify;
+}
+
+.mafs-cab {
+  padding: 40px 15px 15px;
+}
+
+.mafs-cab span.mafs-tit {
+  font-family: var(--letrab);
+  display: block;
+  text-align: right;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 15px 15px 0;
+  line-height: 25px;
+  color: var(--accentoa);
+}
+
+.duo .mafs-cab span.mafs-tit {
+  color: var(--ddd);
+}
+
+.mafs-cab span.mafs-dat {
+  font-size: 10px;
+  font-family: var(--letra);
+  text-transform: uppercase;
+  color: var(--ddd);
+  font-weight: 600;
+  text-align: right;
+  display: block;
+  padding: 0 30px 15px;
+}
+
+.duo .mafs-cab span.mafs-dat {
+  color: var(--accentoa);
+}
+
+.mafs-sep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mafs-sep:before,
+.mafs-sep:after {
+  content: "";
+  width: 100%;
+  background: linear-gradient(270deg, var(--grads));
+  height: 1px;
+}
+
+.mafs-sep:after {
+  background: linear-gradient(90deg, var(--grads));
+}
+
+.mafs-sep>span {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin: 0 -1px;
+  background: var(--accentoa);
+  height: 40px;
+  width: 40px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: var(--111);
+}
+
+.img-tr {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 100px;
+  height: 100px;
+  background: var(--accentoa);
+  padding: 3px;
+  margin: 0 -2px;
+}
+
+.img-tr img {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.mafs-txt {
+  margin: 30px 60px 50px;
+}
+
+.mafs-pjs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 2px;
+}
+
+.mafs-pj {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 225px;
+  overflow: hidden;
+  transition: all .7s ease-in-out;
+}
+
+.mafs-img,
+.mafs-img img {
+  min-width: 275px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: all .7s ease-in-out;
+}
+
+.mafs-pj:hover .mafs-img img,
+.mafs-pj:hover .mafs-img {
+  filter: grayscale(0.25);
+  transition: all .7s ease-in-out;
+  transition-delay: 0.9s;
+}
+
+.mafs-info {
+  position: absolute;
+  width: -webkit-fill-available;
+  background: rgba(var(--negrorgb), 0.85);
+  padding: 8px;
+  border: 1px solid rgba(var(--negrorgb), 0.9);
+  margin: 20px;
+  transition: all .7s ease-in-out;
+}
+
+.mafs-info>span {
+  font-size: 9px;
+  font-family: var(--letra);
+  text-transform: uppercase;
+  color: var(--ddd);
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  line-height: 13px;
+}
+
+.mafs-info>span.nom {
+  font-family: var(--letrab);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--accentoa);
+  line-height: 18px;
+  text-transform: capitalize;
+}
+
+.mafs-pj:hover .mafs-info {
+  transform: scale(0);
+  transition: all .7s ease-in-out;
+  transition-delay: 1s;
+}
+
+.mafs-dats {
+  background: linear-gradient(90deg, var(--accentob), var(--accentoa), var(--accentob));
+  padding: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9px;
+  font-family: var(--letra);
+  text-transform: uppercase;
+  color: var(--eee);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
