@@ -1,0 +1,65 @@
+/* Este código pertenece a maywemeetotherrph
+No intento plagiar su trabajo, tan solo estoy alojando este css aquí para que mis posts no tarden en cargar
+Cuando maywemeetotherrph arregle sus códigos, yo borraré este archivo */
+
+.darkindex{
+  width: 450px;
+  height: 200px;
+  margin: 25px auto;
+  padding-bottom: 15px;
+  border: 2px solid var(--dark1);
+  outline: 15px solid var(--dark2);
+  background: var(--darkbg);
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.darkindex1{
+  width: 180px;
+  height: 180px;
+  border: 5px solid var(--dark1);
+  border-radius: 100%;
+  margin: 12px;
+}
+
+.darkindex1 img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  filter: var(--darkfilter);
+  border-radius: 100%;
+}
+
+.darkindex2{
+  font-size: 24px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  color: var(--dark3);
+  text-transform: uppercase;
+  align-self: center;
+  margin: 15px; 
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.darkindex2 span{
+  color: var(--darktxtc);
+  font-size: 12px;
+  text-transform: none;
+  font-family: "DM Serif Display", serif;
+  font-weight: 900;
+}
+.myc{
+  width: 400px;
+  text-align: center;
+  margin: 10px auto 15px;
+  display: block;
+  font-size: 10px;
+  text-decoration: none;
+  font: 8px verdana;
+  color: #888;
+}
+
