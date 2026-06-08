@@ -80,3 +80,53 @@ Cuando maywemeetotherrph arregle sus códigos, yo borraré este archivo */
   color: #888;
 }
 
+.darkindex{
+  width: 450px;
+  height: 200px;
+  margin: 25px auto;
+  padding-bottom: 15px;
+  border: 2px solid var(--dark1);
+  outline: 15px solid var(--dark2);
+  background: var(--darkbg);
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.darkindex1{
+  width: 180px;
+  height: 180px;
+  border: 5px solid var(--dark1);
+  border-radius: 100%;
+  margin: 12px;
+}
+
+.darkindex1 img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  filter: var(--darkfilter);
+  border-radius: 100%;
+}
+
+.darkindex2{
+  font-size: 24px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  color: var(--dark3);
+  text-transform: uppercase;
+  align-self: center;
+  margin: 15px; 
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.darkindex2 span{
+  color: var(--darktxtc);
+  font-size: 12px;
+  text-transform: none;
+  font-family: "DM Serif Display", serif;
+  font-weight: 900;
+}
