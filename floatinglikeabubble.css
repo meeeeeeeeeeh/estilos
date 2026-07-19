@@ -12,6 +12,7 @@
 .emisor {
   background-color: #FAE3AB;
   max-width: 250px;
+  width: fit-content;
   padding: 10px;
   margin: 10px 0px;
   border-radius: 0px 20px 20px 20px;
@@ -40,6 +41,7 @@
   float: right;
   background-color: #ebebeb;
   max-width: 250px;
+  width: fit-content;
   padding: 10px;
   margin: 10px 0px;
   border-radius: 20px 20px 0px 20px;
