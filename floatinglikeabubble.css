@@ -2,11 +2,10 @@
 
 .bubble {
   height: 400px;
-  width: auto;
+  width:  50%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.bubble br {display: none}
 
 .emisor {
   background-color: #FAE3AB;
